@@ -1,0 +1,19 @@
+Windows虚拟环境的搭建
+
+由于安装的是python3.5和3.6 可以使用它自带的venv搭建虚拟环境。
+步骤如下：
+
+1、创建一个虚拟环境
+首先来到自己想创建的目录下，我选择的是D：\
+在cmd命令行中输入
+D:\>mkdir test_venv
+D:\>cd test_venv
+D:\test_venv>python -m venv test  #创建了名为test的虚拟环境
+2、启用虚拟坏境
+输入D:\test_venv>test\Scripts\activate.bat；
+(test) D:\test_venv>   #可以看到前面多了一个（test），已经进入了虚拟环境
+3、用pip给虚拟环境安装模块
+当前的pip是8.1.1版本的，所以记住先用python -m pip install --upgrade pip命令升级pip，然后选择自己需要安装的模块进行安装即可
+4、退出虚拟环境
+输入(test) D:\test_venv>test\Scripts\deactivate.bat
+D:\test_venv>		#可以看到，已经退出了虚拟环境
